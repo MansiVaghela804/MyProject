@@ -30,7 +30,7 @@ Context context;
 
                 AlertDialog.Builder builder=new AlertDialog.Builder(Main2Activity.this);
                 builder.setMessage("Are you sure?");
-
+                builder.setTitle("My One");
                 builder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

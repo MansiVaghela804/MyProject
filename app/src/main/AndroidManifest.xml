@@ -5,8 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -29,6 +28,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ExternalStorage.ExternalStorageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".InternalStorage.InternalStorageActivity"></activity>
+        <activity android:name=".BMICalculator.ResultActivity" />
+        <activity android:name=".BMICalculator.StartActivity" />
+        <activity android:name=".RoomDatabase.RoomActivity" />
         <activity android:name=".Listview.MainActivity" />
         <activity
             android:name=".Navigationdrawer.NavigationActivity"
@@ -64,7 +74,7 @@
 
         <activity
             android:name=".GoogleMap.MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps" />
 
         <service
             android:name=".GoogleMap.GoogleService"
@@ -81,13 +91,7 @@
         <activity android:name=".RegistrationApi.RegistrationActivity" />
         <activity android:name=".UI_Widgets.Splashscreen" />
         <activity android:name=".changepassword.PasswordActivity" />
-        <activity android:name=".SearchView.SearchActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".SearchView.SearchActivity" />
         <activity android:name=".ExpandableRecycleview.ListExpandActivity" />
         <activity android:name=".SignIn.SignInActivity" />
         <activity
@@ -96,9 +100,7 @@
         <activity
             android:name=".GoogleMap.MapsActivity2"
             android:label="@string/title_activity_maps2" />
-        <activity android:name=".LoadImage.ImageGalleryActivity">
-
-        </activity>
+        <activity android:name=".LoadImage.ImageGalleryActivity" />
     </application>
 
 </manifest>
